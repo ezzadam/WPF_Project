@@ -9,6 +9,8 @@
         Title="MainWindow" Height="450" Width="800"
                  Background="Black">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            
+        </Grid.RowDefinitions>
     </Grid>
 </mah:MetroWindow>
