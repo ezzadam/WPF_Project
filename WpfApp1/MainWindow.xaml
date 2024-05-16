@@ -58,24 +58,24 @@
         <Button
             Grid.Row="0"
             Width="75"
-            Margin="105,195,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            Background="{DynamicResource MahApps.Brushes.Accent}"
             Click="Button_Click"
-            Content="Button"
-            Foreground="{DynamicResource MahApps.Brushes.Accent}" />
+            Content="Open"
+            Foreground="{DynamicResource MahApps.Brushes.IdealForeground}" />
         <StatusBar Grid.Row="1" Background="{DynamicResource MahApps.Brushes.Accent}">
             <StatusBarItem FontSize="10">Login as:</StatusBarItem>
             <StatusBarItem FontSize="10" FontWeight="Bold">
-                <TextBlock Text="Designer" />
+                <TextBlock Text="{Binding user}" />
             </StatusBarItem>
             <StatusBarItem FontSize="10">Recipe:</StatusBarItem>
             <StatusBarItem FontSize="10" FontWeight="Bold">
-                <TextBlock Text="Recipe Loaded" />
+                <TextBlock Text="{Binding recipe}" />
             </StatusBarItem>
             <StatusBarItem HorizontalAlignment="Right" FontSize="10">Version:</StatusBarItem>
             <StatusBarItem FontSize="10" FontWeight="Bold">
-                <TextBlock Text="2.0.0" />
+                <TextBlock Text="{Binding version}" />
             </StatusBarItem>
         </StatusBar>
     </Grid>
