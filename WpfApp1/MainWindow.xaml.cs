@@ -11,5 +11,10 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            FirstFlyout.IsOpen = true;
+        }
     }
 }
